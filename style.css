@@ -1,0 +1,247 @@
+*{
+    margin:0px;
+   padding:0px;
+    box-sizing:border;
+  }
+  body{
+  
+  font-family: 'Abel', sans-serif;
+  color: #333;
+  letter-spacing: 1px;
+  line-height: 1.4;
+  font-size: 1.6rem;
+  
+  }
+  
+  html{
+    font-size: 62.5%;
+  }
+  
+  .menu-bar{
+    background:pink;
+    text-align:center;
+  }
+  .menu-bar ul{
+    display:inline-flex;
+    list-style:none;
+    color:black;
+  }
+  .menu-bar ul li{
+    width:120px;
+    margin:15px;
+    padding:15px;
+    font-family: 'Stick No Bills', sans-serif;
+    z-index: 2;
+  }
+  .menu-bar ul li a{
+    text-decoration:none;
+    color:black;
+  }
+  .menu-bar ul li:hover{
+    background:rosybrown;
+    }
+  .menu-bar.fa{
+    margin-right:8px;
+  }
+  
+  .products{
+    display:none;
+  }
+  
+  .menu-bar ul li:hover .products{
+    display:block;
+    position:absolute;
+    background:grey;
+    margin-top: 15px;
+    margin-left:-15px;
+   }
+  .menu-bar ul li:hover .products:hover{
+     transition:scale(1.1);
+  }
+  .menu-bar ul li:hover .products ul{
+    display:block;
+    margin:10px;
+   
+  }
+  .menu-bar ul li:hover .products ul:hover{
+     transition:scale(1.1);
+  }
+  .menu-bar ul li:hover .products ul li{
+   width:150px;
+    padding: 10px;
+  /*   background:transparent; */
+    text-align:left;
+  }
+  .menu-bar ul li:hover .products ul li:hover{
+    font-weight:bold;
+  }
+  .menu-bar ul li:hover .products ul li a:hover{
+   
+  }
+  
+  .container{
+        width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  
+  .header{
+    font-family: 'Gruppo', cursive;
+  text-align: center;
+  font-size: 3.3rem;
+  padding: 20px;
+    font-weight:bold;
+  }
+  
+  .para {
+    width: 72%;
+  margin: 0px auto 40px auto;
+  }
+  
+  .all-image{
+  position:relative;
+  column-count:3;
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left:auto;
+  margin-right:auto;
+    margin-top:8rem;
+    padding:20px;
+   }
+  
+  .img-container1{
+    display:inline-block;
+    margin:10px;
+    overflow:hidden;
+  }
+  
+  .img-container2{
+    display:inline-block;
+    margin-top:10px;
+    overflow:hidden;
+    grid-area: 1 / 2 / 3 / 2;
+  }
+  
+  img{
+    width:100%;
+    transition:0.25s ease-in-out;
+  }
+  
+  .img-container1:hover{
+   transform:scale(1.05);
+  }
+  
+  .img-container2:hover{
+    transform:scale(1.05);
+  }
+  
+  
+  .search-box{
+    position:absolute;
+    margin: 1.5rem;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: #2f3640;
+    height:20px;
+    border-radius:40px;
+    padding:16px;
+   display:flex;
+    width: 90%;
+    max-width:600px;
+    
+   
+   }
+  
+  
+  
+  .search-btn{
+    color:white;
+    float: right;
+    margin-left: 10px;
+    background:grey;
+    width:20px;
+    height:20px;
+    border-radius : 50%;
+    padding:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+   
+  }
+  
+  
+  .search-text{
+    border:none;
+    background:none;
+    outline:none;
+    float:left;
+    padding:0;
+    color:white;
+    font-size: 1.5rem;
+    transition: 0.4s;
+    line-height:40px;
+    width:540px;
+    
+  }
+  h2{
+    border-bottom: 1px solid #333;
+      font-family: 'Gruppo', cursive;
+      letter-spacing: 1px;
+    }
+  
+  
+  /* :root{
+    font-size: 16px;
+  } */
+  
+  .side-heading{
+    font-weight: bold;
+  }
+  #cards{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    
+  }
+  .container1{
+    background-color: white;
+  max-width:15rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.1);
+  margin-top:4rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  }
+  .container1:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+  }
+  .info{
+    padding: 1rem;
+    
+  }
+  
+  .makeUp-products{
+    height: 10rem;
+    width:100%;
+  }
+  
+  @media (max-width:540px){
+    .all-image{
+      display: grid;
+    grid-template-columns: repeat(2, 1fr);
+      padding:20px;
+    }
+  }
+
+  @media (max-width:600px){
+    body{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      margin-right: -2rem;
+    }
+  }
+  
+  
